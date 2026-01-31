@@ -1,4 +1,4 @@
-import { supabase } from "../config/supabase";
+import { supabase } from "../config/supabase.js";
 export const addVehicle = async (req, res) =>{
     const body = req.body;
     const {data, error} = await 

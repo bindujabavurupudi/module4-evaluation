@@ -1,6 +1,6 @@
 import express from "express"
-import { addVehicle,assginDriver, getVehicle } from "../controllers/vehicleController"
-import { rateLimit } from "../middlewares/rateLimit"
+import { addVehicle,assginDriver, getVehicle } from "../controllers/vehicleController.js"
+import { rateLimit } from "../middlewares/rateLimit.js"
 
 export const vehicleRouter = express.Router();
 vehicleRouter.post("/add", rateLimit, addVehicle);

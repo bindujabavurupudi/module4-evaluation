@@ -1,9 +1,9 @@
 import express from "express"
-import { logger } from "./middlewares/logger"
-import { userRouter } from "./routes/userRoutes"
-import { vehicleRouter } from "./routes/vehicleRoutes"
-import { tripRouter } from "./routes/tripRoutes"
-import { supabase } from "./config/supabase"
+import { logger } from "./middlewares/logger.js"
+import { userRouter } from "./routes/userRoutes.js"
+import { vehicleRouter } from "./routes/vehicleRoutes.js"
+import { tripRouter } from "./routes/tripRoutes.js"
+import { supabase } from "./config/supabase.js"
 const app = express();
 app.use(express.json());
 app.use(logger)

@@ -1,4 +1,4 @@
-import { supabase } from "../config/supabase";
+import { supabase } from "../config/supabase.js";
 
 export const createTrip = async (req, res) =>{
     const trip = req.body;
